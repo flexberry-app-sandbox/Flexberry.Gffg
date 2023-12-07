@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-gffg-запись-e",
+  "editForm": "i-i-s-gffg-запись-e",
+  "external": false,
+  "caption": "Запись",
+  "name": "IISGffgЗаписьL",
+  "className": "ЗаписьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gffg-запись",
+      "modelProjection": "ЗаписьL"
+    }
+  ]
+}

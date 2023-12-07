@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Запись",
+      "projection": "ЗаписьL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Gfgd",
+  "name": "IISGffggfgdE",
+  "className": "gfgdE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gffg-gfgd",
+      "modelProjection": "gfgdE"
+    }
+  ]
+}

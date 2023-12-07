@@ -1,0 +1,66 @@
+<h3 class="ui header">{{t "forms.i-i-s-gffg-gfgd-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-gffg-gfgd-e.time-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.time
+      class=(if (v-get validationModel "time" "isInvalid") "error")
+      data-test-i-i-s-gffg-gfgd-e-time=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "time" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.hg
+      class=(if (v-get validationModel "hg" "isInvalid") "error")
+      label=(t "forms.i-i-s-gffg-gfgd-e.hg-caption")
+      data-test-i-i-s-gffg-gfgd-e-hg=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "hg" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-gffg-gfgd-e.запись-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.запись
+      displayAttributeName="время"
+      autocomplete=true
+      relationName="запись"
+      projection="ЗаписьL"
+      title=(t "forms.i-i-s-gffg-gfgd-e.запись-caption")
+      readonly=readonly
+      componentName="записьLookup"
+      class=(if (v-get validationModel "запись" "isInvalid") "error")
+      data-test-i-i-s-gffg-gfgd-e-запись=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "запись" "message")}}
+  </div>
+</form>

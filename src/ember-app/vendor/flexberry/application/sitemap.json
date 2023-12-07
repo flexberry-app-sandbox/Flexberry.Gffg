@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Gffg",
+  "applicationTitle": "Gffg",
+  "items": [
+    {
+      "link": null,
+      "menuName": "gffg",
+      "caption": "Gffg",
+      "title": "Gffg",
+      "children": [
+        {
+          "link": "i-i-s-gffg-gfgd-l",
+          "menuName": null,
+          "caption": "Gfgd",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-gffg-запись-l",
+          "menuName": null,
+          "caption": "Запись",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Запись",
+  "name": "IISGffgЗаписьE",
+  "className": "ЗаписьE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gffg-запись",
+      "modelProjection": "ЗаписьE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-gffg-gfgd-e",
+  "editForm": "i-i-s-gffg-gfgd-e",
+  "external": false,
+  "caption": "Gfgd",
+  "name": "IISGffggfgdL",
+  "className": "gfgdL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-gffg-gfgd",
+      "modelProjection": "gfgdL"
+    }
+  ]
+}
